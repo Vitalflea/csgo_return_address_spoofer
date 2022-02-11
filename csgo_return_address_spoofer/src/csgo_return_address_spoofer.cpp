@@ -35,7 +35,6 @@ public:
 		void* client_class{ nullptr };
 
 		_asm {
-
 			xor eax, eax
 			push reta
 			mov ecx, this
@@ -49,14 +48,12 @@ public:
 	}
 };
 
-
 void Attach(const HINSTANCE& instance) {
 
 	AllocConsole();
 
 	FILE* output{ nullptr };
 	freopen_s(&output, "CONOUT$", "w", stdout);
-	freopen_s(&output, "CONIN$", "r", stdin);
 
 	g_client_base = reinterpret_cast<std::uintptr_t>(GetModuleHandle("client.dll"));
 
