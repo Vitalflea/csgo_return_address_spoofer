@@ -5,3 +5,4 @@
 [![Windows](https://img.shields.io/badge/platform-Windows-0078d7.svg?style=plastic)](https://en.wikipedia.org/wiki/Microsoft_Windows) 
 
 An example for spoofing the return address of GetAllClasses
+
